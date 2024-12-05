@@ -1,0 +1,153 @@
+/* General Styling */
+body {
+    background-color: #121212;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #4caf50;
+}
+
+/* Timeline Section */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 800px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background: #4caf50;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    width: 100%;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s forwards;
+}
+
+.timeline-item:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.timeline-item:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.timeline-content {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.timeline-content h2 {
+    color: #4caf50;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.timeline-content h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #e0e0e0;
+}
+
+.timeline-content p {
+    font-size: 1rem;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+/* Hover Effects */
+.timeline-content:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Keyframes for Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 10%; /* Shift the vertical line slightly to the left for smaller screens */
+        width: 2px;
+    }
+
+    .timeline-item {
+        text-align: left;
+        margin-bottom: 30px; /* Reduce spacing for smaller screens */
+    }
+
+    .timeline-content {
+        padding: 15px;
+        text-align: left; /* Align content to the left for readability */
+    }
+
+    .timeline-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .timeline-content h3 {
+        font-size: 1rem;
+    }
+
+    .timeline-content p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .timeline::before {
+        display: none; /* Hide the vertical line for very small screens */
+    }
+
+    .timeline-content {
+        padding: 10px;
+    }
+
+    .timeline-content h2 {
+        font-size: 1rem;
+    }
+
+    .timeline-content h3 {
+        font-size: 0.9rem;
+    }
+
+    .timeline-content p {
+        font-size: 0.8rem;
+    }
+}

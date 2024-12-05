@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block container %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Experience</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="experience-section">
+        <h1>My Experience</h1>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h2>2024  - Present</h2>
+                    <h3>Backend Developer</h3>
+                    <p>Developed and maintained RESTful APIs, optimized database queries, and integrated third-party services for dynamic applications.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h2>2022 - 2023</h2>
+                    <h3>Web Developer Intern</h3>
+                    <p>Worked on responsive website designs and assisted in building web applications using HTML, CSS, and JavaScript.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+{% endblock container %}

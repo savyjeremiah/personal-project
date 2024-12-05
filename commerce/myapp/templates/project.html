@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block container %}
+<div class="container">
+  <h1>My Projects</h1>
+  <div class="project-list">
+    <div class="project-item">
+      <h2>Portfolio Website</h2>
+      <p>A personal website showcasing my work, skills, and contact information.</p>
+      <a href="{% static 'assig/index.html' %}" class="btn">View Project</a>
+    </div>
+
+    <div class="project-item">
+      <h2>E-commerce Store</h2>
+      <p>An online shop with a cart system, product filtering, and payment gateway integration.</p>
+      <a href="{% static 'movies/index.html' %}" class="btn">View Project</a>
+    </div>
+
+    <div class="project-item">
+      <h2>Stopwatch App</h2>
+      <p>A simple stopwatch application to measure time intervals accurately.</p>
+      <a href="{% static 'calcul/weather.html' %}" class="btn">View Project</a>
+    </div>
+
+    <div class="project-item">
+      <h2>Work at Home</h2>
+      <p>A project management tool for remote teams working from home.</p>
+      <a href="{% static 'work_at_home/now.html' %}" class="btn">View Project</a>
+    </div>
+  </div>
+</div>
+{% endblock container %}

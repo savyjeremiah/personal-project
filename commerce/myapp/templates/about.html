@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block container %}
+<div class="about-me">
+    <div class="profile">
+        <div class="bio">
+            <h1>Hello! I’m <span class="name">Saviour Jeremiah</span></h1>
+            <p>
+                A passionate and dedicated individual with a strong interest in 
+                <strong>web development</strong>, <strong>backend programming</strong>, 
+                and creating impactful solutions using technology. I enjoy bringing ideas to life 
+                through clean, responsive, and dynamic web applications. My primary tools include 
+                <strong>HTML</strong>, <strong>CSS</strong>, <strong>Python</strong>, and <strong>JavaScript</strong>, 
+                and I’m constantly learning to expand my knowledge in related technologies.
+            </p>
+        </div>
+        <div class="profile">
+            <img src="{% static 'images/saviour.jpg' %}" alt="Saviour Jeremiah" class="circle">
+        </div>
+    </div>
+   
+    <!-- Skills Section -->
+    
+        <div class="container">
+            <h2 style="color:white ;">Skills</h2>
+            <div class="skills">
+                <div class="skill">
+                    <h3 style="color:white ;">HTML</h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3 style="color:white ;">CSS</h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3 style="color:white ;">JavaScript</h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 40%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3 style="color:white ;">Python</h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 94%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    
+{% endblock container %}

@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block container %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="resume">
+        <div class="header">
+            <h1>Saviour Jeremiah</h1>
+            <p>Backend Developer | Web Developer</p>
+        </div>
+
+        <div class="content">
+            <!-- Profile Section -->
+            <section class="profile">
+                <h2>Profile</h2>
+                <p>
+                    Passionate backend developer with 2+ years of experience in building scalable web applications,
+                    integrating APIs, and optimizing databases. Adept at collaborating in agile teams to deliver impactful solutions.
+                </p>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML & CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python (Django, Flask)</li>
+                    <li>Database Management (MySQL, PostgreSQL)</li>
+                </ul>
+            </section>
+
+            <!-- Experience Section -->
+            <section class="experience">
+                <h2>Experience</h2>
+                <div class="experience-item">
+                    <h3>Backend Developer</h3>
+                    <span>2023 - Present</span>
+                    <p>Developed and maintained RESTful APIs, optimized database queries, and integrated third-party services.</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Web Developer Intern</h3>
+                    <span>2022 - 2023</span>
+                    <p>Created responsive web applications and worked on cross-browser compatibility using HTML, CSS, and JavaScript.</p>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section class="education">
+                <h2>Education</h2>
+                <p>Bachelor's Degree in Computer Science - University of Technology, 2022</p>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
+
+{% endblock container %}
